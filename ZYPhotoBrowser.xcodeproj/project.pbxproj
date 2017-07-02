@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFF5F8521F089ECA00FB31AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8511F089ECA00FB31AF /* main.m */; };
+		EFF5F8551F089ECA00FB31AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8541F089ECA00FB31AF /* AppDelegate.m */; };
+		EFF5F8581F089ECA00FB31AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8571F089ECA00FB31AF /* ViewController.m */; };
+		EFF5F85B1F089ECA00FB31AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F8591F089ECA00FB31AF /* Main.storyboard */; };
+		EFF5F85D1F089ECA00FB31AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F85C1F089ECA00FB31AF /* Assets.xcassets */; };
+		EFF5F8601F089ECA00FB31AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F85E1F089ECA00FB31AF /* LaunchScreen.storyboard */; };
+		EFF5F86B1F089ECA00FB31AF /* ZYPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F86A1F089ECA00FB31AF /* ZYPhotoBrowserTests.m */; };
+		EFF5F8761F089ECA00FB31AF /* ZYPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8751F089ECA00FB31AF /* ZYPhotoBrowserUITests.m */; };
+		EFF5F88D1F089FA900FB31AF /* aima0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F8871F089FA900FB31AF /* aima0.jpeg */; };
+		EFF5F88E1F089FA900FB31AF /* aima1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F8881F089FA900FB31AF /* aima1.jpeg */; };
+		EFF5F88F1F089FA900FB31AF /* aima2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F8891F089FA900FB31AF /* aima2.jpeg */; };
+		EFF5F8901F089FA900FB31AF /* aima3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F88A1F089FA900FB31AF /* aima3.jpeg */; };
+		EFF5F8911F089FA900FB31AF /* aima4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F88B1F089FA900FB31AF /* aima4.jpeg */; };
+		EFF5F8921F089FA900FB31AF /* aima5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F88C1F089FA900FB31AF /* aima5.jpeg */; };
+		EFF5F8961F08A06B00FB31AF /* aima6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F8931F08A06B00FB31AF /* aima6.jpeg */; };
+		EFF5F89B1F08A1FD00FB31AF /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F89A1F08A1FD00FB31AF /* CollectionViewCell.m */; };
+		EFF5F89E1F08A36E00FB31AF /* aima7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F89C1F08A36E00FB31AF /* aima7.jpeg */; };
+		EFF5F89F1F08A36E00FB31AF /* aima8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF5F89D1F08A36E00FB31AF /* aima8.jpeg */; };
+		EFF5F8A31F08A4A400FB31AF /* ZYPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8A21F08A4A400FB31AF /* ZYPhotoBrowser.m */; };
+		EFF5F8A61F08A5F800FB31AF /* ZYPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8A51F08A5F800FB31AF /* ZYPhotoBrowserCell.m */; };
+		EFF5F8A91F08AD5400FB31AF /* ZYPhotoBrowserAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF5F8A81F08AD5400FB31AF /* ZYPhotoBrowserAnimate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFF5F8671F089ECA00FB31AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF5F8451F089ECA00FB31AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF5F84C1F089ECA00FB31AF;
+			remoteInfo = ZYPhotoBrowser;
+		};
+		EFF5F8721F089ECA00FB31AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF5F8451F089ECA00FB31AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF5F84C1F089ECA00FB31AF;
+			remoteInfo = ZYPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFF5F84D1F089ECA00FB31AF /* ZYPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF5F8511F089ECA00FB31AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFF5F8531F089ECA00FB31AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFF5F8541F089ECA00FB31AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFF5F8561F089ECA00FB31AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFF5F8571F089ECA00FB31AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFF5F85A1F089ECA00FB31AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFF5F85C1F089ECA00FB31AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFF5F85F1F089ECA00FB31AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFF5F8611F089ECA00FB31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF5F8661F089ECA00FB31AF /* ZYPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF5F86A1F089ECA00FB31AF /* ZYPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPhotoBrowserTests.m; sourceTree = "<group>"; };
+		EFF5F86C1F089ECA00FB31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF5F8711F089ECA00FB31AF /* ZYPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF5F8751F089ECA00FB31AF /* ZYPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		EFF5F8771F089ECA00FB31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF5F8871F089FA900FB31AF /* aima0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima0.jpeg; sourceTree = "<group>"; };
+		EFF5F8881F089FA900FB31AF /* aima1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima1.jpeg; sourceTree = "<group>"; };
+		EFF5F8891F089FA900FB31AF /* aima2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima2.jpeg; sourceTree = "<group>"; };
+		EFF5F88A1F089FA900FB31AF /* aima3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima3.jpeg; sourceTree = "<group>"; };
+		EFF5F88B1F089FA900FB31AF /* aima4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima4.jpeg; sourceTree = "<group>"; };
+		EFF5F88C1F089FA900FB31AF /* aima5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima5.jpeg; sourceTree = "<group>"; };
+		EFF5F8931F08A06B00FB31AF /* aima6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima6.jpeg; sourceTree = "<group>"; };
+		EFF5F8991F08A1FD00FB31AF /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		EFF5F89A1F08A1FD00FB31AF /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		EFF5F89C1F08A36E00FB31AF /* aima7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima7.jpeg; sourceTree = "<group>"; };
+		EFF5F89D1F08A36E00FB31AF /* aima8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aima8.jpeg; sourceTree = "<group>"; };
+		EFF5F8A11F08A4A400FB31AF /* ZYPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPhotoBrowser.h; sourceTree = "<group>"; };
+		EFF5F8A21F08A4A400FB31AF /* ZYPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPhotoBrowser.m; sourceTree = "<group>"; };
+		EFF5F8A41F08A5F800FB31AF /* ZYPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPhotoBrowserCell.h; sourceTree = "<group>"; };
+		EFF5F8A51F08A5F800FB31AF /* ZYPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPhotoBrowserCell.m; sourceTree = "<group>"; };
+		EFF5F8A71F08AD5400FB31AF /* ZYPhotoBrowserAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPhotoBrowserAnimate.h; sourceTree = "<group>"; };
+		EFF5F8A81F08AD5400FB31AF /* ZYPhotoBrowserAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPhotoBrowserAnimate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFF5F84A1F089ECA00FB31AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F8631F089ECA00FB31AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F86E1F089ECA00FB31AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFF5F8441F089ECA00FB31AF = {
+			isa = PBXGroup;
+			children = (
+				EFF5F84F1F089ECA00FB31AF /* ZYPhotoBrowser */,
+				EFF5F8691F089ECA00FB31AF /* ZYPhotoBrowserTests */,
+				EFF5F8741F089ECA00FB31AF /* ZYPhotoBrowserUITests */,
+				EFF5F84E1F089ECA00FB31AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFF5F84E1F089ECA00FB31AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F84D1F089ECA00FB31AF /* ZYPhotoBrowser.app */,
+				EFF5F8661F089ECA00FB31AF /* ZYPhotoBrowserTests.xctest */,
+				EFF5F8711F089ECA00FB31AF /* ZYPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFF5F84F1F089ECA00FB31AF /* ZYPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F8A01F08A48B00FB31AF /* ZYPhotoBrowser */,
+				EFF5F8871F089FA900FB31AF /* aima0.jpeg */,
+				EFF5F8881F089FA900FB31AF /* aima1.jpeg */,
+				EFF5F8891F089FA900FB31AF /* aima2.jpeg */,
+				EFF5F88A1F089FA900FB31AF /* aima3.jpeg */,
+				EFF5F88B1F089FA900FB31AF /* aima4.jpeg */,
+				EFF5F88C1F089FA900FB31AF /* aima5.jpeg */,
+				EFF5F8931F08A06B00FB31AF /* aima6.jpeg */,
+				EFF5F89C1F08A36E00FB31AF /* aima7.jpeg */,
+				EFF5F89D1F08A36E00FB31AF /* aima8.jpeg */,
+				EFF5F8531F089ECA00FB31AF /* AppDelegate.h */,
+				EFF5F8541F089ECA00FB31AF /* AppDelegate.m */,
+				EFF5F8561F089ECA00FB31AF /* ViewController.h */,
+				EFF5F8571F089ECA00FB31AF /* ViewController.m */,
+				EFF5F8991F08A1FD00FB31AF /* CollectionViewCell.h */,
+				EFF5F89A1F08A1FD00FB31AF /* CollectionViewCell.m */,
+				EFF5F8591F089ECA00FB31AF /* Main.storyboard */,
+				EFF5F85C1F089ECA00FB31AF /* Assets.xcassets */,
+				EFF5F85E1F089ECA00FB31AF /* LaunchScreen.storyboard */,
+				EFF5F8611F089ECA00FB31AF /* Info.plist */,
+				EFF5F8501F089ECA00FB31AF /* Supporting Files */,
+			);
+			path = ZYPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		EFF5F8501F089ECA00FB31AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F8511F089ECA00FB31AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFF5F8691F089ECA00FB31AF /* ZYPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F86A1F089ECA00FB31AF /* ZYPhotoBrowserTests.m */,
+				EFF5F86C1F089ECA00FB31AF /* Info.plist */,
+			);
+			path = ZYPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		EFF5F8741F089ECA00FB31AF /* ZYPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F8751F089ECA00FB31AF /* ZYPhotoBrowserUITests.m */,
+				EFF5F8771F089ECA00FB31AF /* Info.plist */,
+			);
+			path = ZYPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		EFF5F8A01F08A48B00FB31AF /* ZYPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5F8A11F08A4A400FB31AF /* ZYPhotoBrowser.h */,
+				EFF5F8A21F08A4A400FB31AF /* ZYPhotoBrowser.m */,
+				EFF5F8A41F08A5F800FB31AF /* ZYPhotoBrowserCell.h */,
+				EFF5F8A51F08A5F800FB31AF /* ZYPhotoBrowserCell.m */,
+				EFF5F8A71F08AD5400FB31AF /* ZYPhotoBrowserAnimate.h */,
+				EFF5F8A81F08AD5400FB31AF /* ZYPhotoBrowserAnimate.m */,
+			);
+			path = ZYPhotoBrowser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFF5F84C1F089ECA00FB31AF /* ZYPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF5F87A1F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowser" */;
+			buildPhases = (
+				EFF5F8491F089ECA00FB31AF /* Sources */,
+				EFF5F84A1F089ECA00FB31AF /* Frameworks */,
+				EFF5F84B1F089ECA00FB31AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYPhotoBrowser;
+			productName = ZYPhotoBrowser;
+			productReference = EFF5F84D1F089ECA00FB31AF /* ZYPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFF5F8651F089ECA00FB31AF /* ZYPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF5F87D1F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowserTests" */;
+			buildPhases = (
+				EFF5F8621F089ECA00FB31AF /* Sources */,
+				EFF5F8631F089ECA00FB31AF /* Frameworks */,
+				EFF5F8641F089ECA00FB31AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF5F8681F089ECA00FB31AF /* PBXTargetDependency */,
+			);
+			name = ZYPhotoBrowserTests;
+			productName = ZYPhotoBrowserTests;
+			productReference = EFF5F8661F089ECA00FB31AF /* ZYPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFF5F8701F089ECA00FB31AF /* ZYPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF5F8801F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowserUITests" */;
+			buildPhases = (
+				EFF5F86D1F089ECA00FB31AF /* Sources */,
+				EFF5F86E1F089ECA00FB31AF /* Frameworks */,
+				EFF5F86F1F089ECA00FB31AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF5F8731F089ECA00FB31AF /* PBXTargetDependency */,
+			);
+			name = ZYPhotoBrowserUITests;
+			productName = ZYPhotoBrowserUITests;
+			productReference = EFF5F8711F089ECA00FB31AF /* ZYPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFF5F8451F089ECA00FB31AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zhuyongqing;
+				TargetAttributes = {
+					EFF5F84C1F089ECA00FB31AF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = EPF5B683Z9;
+						ProvisioningStyle = Automatic;
+					};
+					EFF5F8651F089ECA00FB31AF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = EPF5B683Z9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EFF5F84C1F089ECA00FB31AF;
+					};
+					EFF5F8701F089ECA00FB31AF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = EPF5B683Z9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EFF5F84C1F089ECA00FB31AF;
+					};
+				};
+			};
+			buildConfigurationList = EFF5F8481F089ECA00FB31AF /* Build configuration list for PBXProject "ZYPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFF5F8441F089ECA00FB31AF;
+			productRefGroup = EFF5F84E1F089ECA00FB31AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFF5F84C1F089ECA00FB31AF /* ZYPhotoBrowser */,
+				EFF5F8651F089ECA00FB31AF /* ZYPhotoBrowserTests */,
+				EFF5F8701F089ECA00FB31AF /* ZYPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFF5F84B1F089ECA00FB31AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF5F8901F089FA900FB31AF /* aima3.jpeg in Resources */,
+				EFF5F88F1F089FA900FB31AF /* aima2.jpeg in Resources */,
+				EFF5F89F1F08A36E00FB31AF /* aima8.jpeg in Resources */,
+				EFF5F88D1F089FA900FB31AF /* aima0.jpeg in Resources */,
+				EFF5F8601F089ECA00FB31AF /* LaunchScreen.storyboard in Resources */,
+				EFF5F88E1F089FA900FB31AF /* aima1.jpeg in Resources */,
+				EFF5F8921F089FA900FB31AF /* aima5.jpeg in Resources */,
+				EFF5F85D1F089ECA00FB31AF /* Assets.xcassets in Resources */,
+				EFF5F85B1F089ECA00FB31AF /* Main.storyboard in Resources */,
+				EFF5F8961F08A06B00FB31AF /* aima6.jpeg in Resources */,
+				EFF5F8911F089FA900FB31AF /* aima4.jpeg in Resources */,
+				EFF5F89E1F08A36E00FB31AF /* aima7.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F8641F089ECA00FB31AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F86F1F089ECA00FB31AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFF5F8491F089ECA00FB31AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF5F8A61F08A5F800FB31AF /* ZYPhotoBrowserCell.m in Sources */,
+				EFF5F8581F089ECA00FB31AF /* ViewController.m in Sources */,
+				EFF5F8A31F08A4A400FB31AF /* ZYPhotoBrowser.m in Sources */,
+				EFF5F8551F089ECA00FB31AF /* AppDelegate.m in Sources */,
+				EFF5F8A91F08AD5400FB31AF /* ZYPhotoBrowserAnimate.m in Sources */,
+				EFF5F89B1F08A1FD00FB31AF /* CollectionViewCell.m in Sources */,
+				EFF5F8521F089ECA00FB31AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F8621F089ECA00FB31AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF5F86B1F089ECA00FB31AF /* ZYPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF5F86D1F089ECA00FB31AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF5F8761F089ECA00FB31AF /* ZYPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFF5F8681F089ECA00FB31AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF5F84C1F089ECA00FB31AF /* ZYPhotoBrowser */;
+			targetProxy = EFF5F8671F089ECA00FB31AF /* PBXContainerItemProxy */;
+		};
+		EFF5F8731F089ECA00FB31AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF5F84C1F089ECA00FB31AF /* ZYPhotoBrowser */;
+			targetProxy = EFF5F8721F089ECA00FB31AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFF5F8591F089ECA00FB31AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFF5F85A1F089ECA00FB31AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFF5F85E1F089ECA00FB31AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFF5F85F1F089ECA00FB31AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFF5F8781F089ECA00FB31AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFF5F8791F089ECA00FB31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFF5F87B1F089ECA00FB31AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFF5F87C1F089ECA00FB31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EFF5F87E1F089ECA00FB31AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYPhotoBrowser.app/ZYPhotoBrowser";
+			};
+			name = Debug;
+		};
+		EFF5F87F1F089ECA00FB31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYPhotoBrowser.app/ZYPhotoBrowser";
+			};
+			name = Release;
+		};
+		EFF5F8811F089ECA00FB31AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYPhotoBrowser;
+			};
+			name = Debug;
+		};
+		EFF5F8821F089ECA00FB31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EPF5B683Z9;
+				INFOPLIST_FILE = ZYPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZYPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFF5F8481F089ECA00FB31AF /* Build configuration list for PBXProject "ZYPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF5F8781F089ECA00FB31AF /* Debug */,
+				EFF5F8791F089ECA00FB31AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF5F87A1F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF5F87B1F089ECA00FB31AF /* Debug */,
+				EFF5F87C1F089ECA00FB31AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFF5F87D1F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF5F87E1F089ECA00FB31AF /* Debug */,
+				EFF5F87F1F089ECA00FB31AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFF5F8801F089ECA00FB31AF /* Build configuration list for PBXNativeTarget "ZYPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF5F8811F089ECA00FB31AF /* Debug */,
+				EFF5F8821F089ECA00FB31AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFF5F8451F089ECA00FB31AF /* Project object */;
+}
