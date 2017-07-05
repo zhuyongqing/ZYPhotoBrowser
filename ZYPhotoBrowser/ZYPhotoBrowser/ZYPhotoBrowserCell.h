@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
 
 @protocol ZYPhotoBrowserCellDelegate <NSObject>
 
@@ -23,6 +24,8 @@
 @property(nonatomic,assign) id<ZYPhotoBrowserCellDelegate> delegate;
 
 @property(nonatomic,copy) NSString *imageUrl;
+
+@property(nonatomic,strong) PHAsset *asset;
 
 
 @end

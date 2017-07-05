@@ -9,7 +9,6 @@
 #import "ZYPhotoBrowserCell.h"
 #import "ZYPhotoBrowserProgress.h"
 #import "UIImageView+WebCache.h"
-
 @interface ZYPhotoBrowserCell()<UIScrollViewDelegate>
 
 @property(nonatomic,strong) UIScrollView *scrollView;
@@ -77,6 +76,16 @@
     }];
 }
 
+- (void)setAsset:(PHAsset *)asset{
+    _asset = asset;
+    self.progress.hidden = NO;
+    [self getOriginImageWithLocaIdentifier:asset.localIdentifier withImage:^(UIImage *result, NSURL *url) {
+        self.progress.hidden = YES;
+        _photoImgView.image = result;
+        [self setImageFrameWithImage:result];
+    }];
+}
+
 - (void)setImageFrameWithImage:(UIImage *)image{
     CGFloat imgH = image.size.height * KWinsize.width/image.size.width;
     self.scrollView.frame = self.bounds;
@@ -115,5 +124,33 @@
         [self.delegate photoBrowserDismiss];
     }
 }
+
+- (void)getOriginImageWithLocaIdentifier:(NSString *)identifier withImage:(void(^)(UIImage *,NSURL *))imageBlock{
+    
+    PHFetchResult *result = [PHAsset fetchAssetsWithLocalIdentifiers:@[identifier] options:nil];
+    
+    PHAsset *asset = result.firstObject;
+    
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    options.resizeMode = PHImageRequestOptionsResizeModeFast;
+    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    options.synchronous = NO;
+    options.networkAccessAllowed = YES;
+    
+    CGSize pixSize = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+    CGSize targetSize = pixSize;
+    if (pixSize.width>750 || pixSize.height>1344) {
+        CGFloat ratio = MIN(750/pixSize.width, 1344/pixSize.height);
+        targetSize.width *= ratio;
+        targetSize.height *= ratio;
+    }
+    
+    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:targetSize contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+        if (result) {
+            imageBlock(result,info[@"PHImageFileURLKey"]);
+        }
+    }];
+}
+
 
 @end

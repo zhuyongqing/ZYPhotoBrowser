@@ -24,6 +24,8 @@
 
 @property(nonatomic,strong) NSArray *imgUrls;
 
+@property(nonatomic,strong) NSArray *imgAssets;
+
 
 @property(nonatomic,assign) NSInteger currentIndex;
 
@@ -50,9 +52,12 @@ static NSString *const photoCellId = @"photoCellId";
     if ([self.delegate respondsToSelector:@selector(photoBrowserImageUrls)]) {
         self.imgUrls = [self.delegate photoBrowserImageUrls];
     }
+    
+    if ([self.delegate respondsToSelector:@selector(photoBrowserAssets)]) {
+        self.imgAssets = [self.delegate photoBrowserAssets];
+    }
+    
     [self initSubviews];
-    
-    
     
     [self.collectionView setContentOffset:CGPointMake(self.currentIndex * (CGRectGetWidth(self.view.frame) + KLineSpace), 0)];
 }
@@ -70,6 +75,7 @@ static NSString *const photoCellId = @"photoCellId";
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.pagingEnabled = YES;
+    _collectionView.showsHorizontalScrollIndicator = NO;
     _collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
 
     [self.view addSubview:_collectionView];
@@ -78,12 +84,12 @@ static NSString *const photoCellId = @"photoCellId";
     
     _pageControl = [[UIPageControl alloc] init];
     _pageControl.frame = CGRectMake(0, CGRectGetHeight(self.view.frame)-50, CGRectGetWidth(self.view.frame), 10);
-    _pageControl.numberOfPages = [self maxImgs].count;
+    _pageControl.numberOfPages = [self.delegate countOfShowImages];
     _pageControl.currentPage = self.currentIndex;
-    _pageControl.pageIndicatorTintColor = [UIColor whiteColor];
-    _pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
+    _pageControl.pageIndicatorTintColor = [UIColor grayColor];
+    _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     [self.view addSubview:_pageControl];
-    if ([self maxImgs].count == 0) {
+    if ([self.delegate countOfShowImages] == 0) {
         _pageControl.hidden = YES;
     }
     
@@ -102,7 +108,7 @@ static NSString *const photoCellId = @"photoCellId";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return [self maxImgs].count;
+    return [self.delegate countOfShowImages];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{

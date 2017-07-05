@@ -28,7 +28,9 @@
     }
     
     CGRect startFrame = [self.startView.superview convertRect:self.startView.frame toView:containerView];
-    
+    if (CGRectEqualToRect(startFrame, CGRectZero)) {
+        startFrame = CGRectMake(0,0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));
+    }
     UIView *backView = [[UIView alloc] initWithFrame:containerView.bounds];
     backView.backgroundColor = [UIColor blackColor];
     backView.alpha = !isPresent;
@@ -48,6 +50,10 @@
     CGRect endFrame = CGRectMake(0, CGRectGetHeight(containerView.frame)/2 - imageH/2, CGRectGetWidth(containerView.frame), imageH);
     if (!isPresent) {
         endFrame = [self.endView.superview convertRect:self.endView.frame toView:containerView];
+    }
+    
+    if (!self.startView.image) {
+        endFrame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), startFrame.size.height);
     }
     
     [UIView animateWithDuration:self.duration animations:^{

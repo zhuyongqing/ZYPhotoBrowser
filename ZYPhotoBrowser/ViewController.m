@@ -79,11 +79,19 @@ static NSString *const cellId = @"collectionCellId";
     return cell.imageV;
 }
 
+- (NSInteger)countOfShowImages{
+    return self.imgsArr.count;
+}
+
 - (NSArray *)photoBrowserImages{
     return self.imgsArr;
 }
 
 - (NSArray *)photoBrowserImageUrls{
+    return @[];
+}
+
+- (NSArray *)photoBrowserAssets{
     return @[];
 }
 
