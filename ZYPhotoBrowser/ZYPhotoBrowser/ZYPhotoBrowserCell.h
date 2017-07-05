@@ -22,5 +22,7 @@
 
 @property(nonatomic,assign) id<ZYPhotoBrowserCellDelegate> delegate;
 
+@property(nonatomic,copy) NSString *imageUrl;
+
 
 @end

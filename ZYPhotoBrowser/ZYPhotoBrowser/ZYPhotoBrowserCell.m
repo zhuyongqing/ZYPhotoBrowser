@@ -7,13 +7,21 @@
 //
 
 #import "ZYPhotoBrowserCell.h"
+#import "ZYPhotoBrowserProgress.h"
+#import "UIImageView+WebCache.h"
 
 @interface ZYPhotoBrowserCell()<UIScrollViewDelegate>
 
 @property(nonatomic,strong) UIScrollView *scrollView;
 
+@property(nonatomic,strong) ZYPhotoBrowserProgress *progress;
+
+
 
 @end
+
+#define KProgressH 40
+#define KWinsize [UIScreen mainScreen].bounds.size
 
 @implementation ZYPhotoBrowserCell
 
@@ -34,6 +42,13 @@
         _photoImgView.userInteractionEnabled = YES;
         [self.scrollView addSubview:_photoImgView];
         
+        _progress = [[ZYPhotoBrowserProgress alloc] init];
+        
+        _progress.frame = CGRectMake(0, 0, KProgressH, KProgressH);
+        _progress.hidden = YES;
+        _progress.center = CGPointMake(KWinsize.width/2, KWinsize.height/2);
+        [self addSubview:_progress];
+        
         UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scalePhotoImageView)];
         doubleTap.numberOfTapsRequired = 2;
         [_photoImgView addGestureRecognizer:doubleTap];
@@ -49,12 +64,25 @@
 
 - (void)setImage:(UIImage *)image{
     self.photoImgView.image = image;
-    CGSize winSize = [UIScreen mainScreen].bounds.size;
-    CGFloat imgH = image.size.height * winSize.width/image.size.width;
+    [self setImageFrameWithImage:image];
+}
+
+- (void)setImageUrl:(NSString *)imageUrl{
+    _imageUrl = imageUrl;
+    self.progress.hidden = NO;
+    [_photoImgView sd_setImageWithURL:[NSURL URLWithString:imageUrl] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.progress.hidden = YES;
+        self.photoImgView.image = image;
+        [self setImageFrameWithImage:image];
+    }];
+}
+
+- (void)setImageFrameWithImage:(UIImage *)image{
+    CGFloat imgH = image.size.height * KWinsize.width/image.size.width;
     self.scrollView.frame = self.bounds;
     self.scrollView.zoomScale = 1.0;
-    self.photoImgView.frame = CGRectMake(0, 0, winSize.width, imgH);
-    self.photoImgView.center = CGPointMake(winSize.width/2, winSize.height/2);
+    self.photoImgView.frame = CGRectMake(0, 0, KWinsize.width, imgH);
+    self.photoImgView.center = self.progress.center;
 }
 
 - (CGPoint)photoImgVCenter{

@@ -13,6 +13,8 @@
 //show images
 - (NSArray *)photoBrowserImages;
 
+- (NSArray *)photoBrowserImageUrls;
+
 //根据index 拿到上一个视图中 imageView
 - (UIView *)getStartViewWithIndex:(NSInteger)index;
 

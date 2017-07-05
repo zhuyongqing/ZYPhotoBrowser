@@ -83,6 +83,10 @@ static NSString *const cellId = @"collectionCellId";
     return self.imgsArr;
 }
 
+- (NSArray *)photoBrowserImageUrls{
+    return @[];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

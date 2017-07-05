@@ -22,6 +22,9 @@
 
 @property(nonatomic,strong) NSArray *images;
 
+@property(nonatomic,strong) NSArray *imgUrls;
+
+
 @property(nonatomic,assign) NSInteger currentIndex;
 
 @property(nonatomic,strong) UIImageView *startView;
@@ -43,6 +46,9 @@ static NSString *const photoCellId = @"photoCellId";
     self.modalPresentationStyle = UIModalPresentationCustom;
     if ([self.delegate respondsToSelector:@selector(photoBrowserImages)]) {
         self.images = [self.delegate photoBrowserImages];
+    }
+    if ([self.delegate respondsToSelector:@selector(photoBrowserImageUrls)]) {
+        self.imgUrls = [self.delegate photoBrowserImageUrls];
     }
     [self initSubviews];
     
@@ -72,11 +78,14 @@ static NSString *const photoCellId = @"photoCellId";
     
     _pageControl = [[UIPageControl alloc] init];
     _pageControl.frame = CGRectMake(0, CGRectGetHeight(self.view.frame)-50, CGRectGetWidth(self.view.frame), 10);
-    _pageControl.numberOfPages = self.images.count;
+    _pageControl.numberOfPages = [self maxImgs].count;
     _pageControl.currentPage = self.currentIndex;
     _pageControl.pageIndicatorTintColor = [UIColor whiteColor];
     _pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
     [self.view addSubview:_pageControl];
+    if ([self maxImgs].count == 0) {
+        _pageControl.hidden = YES;
+    }
     
 }
 
@@ -93,12 +102,17 @@ static NSString *const photoCellId = @"photoCellId";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.images.count;
+    return [self maxImgs].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ZYPhotoBrowserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:photoCellId forIndexPath:indexPath];
-    cell.image = self.images[indexPath.row];
+    if (self.images.count > indexPath.row) {
+        cell.image = self.images[indexPath.row];
+    }
+    if (self.imgUrls.count > indexPath.row) {
+        cell.imageUrl = self.imgUrls[indexPath.row];
+    }
     cell.delegate = self;
     return cell;
 }
@@ -123,6 +137,10 @@ static NSString *const photoCellId = @"photoCellId";
     return self.animate;
 }
 
+
+- (NSArray *)maxImgs{
+    return self.imgUrls.count > self.images.count?self.imgUrls:self.images;
+}
 
 
 - (ZYPhotoBrowserAnimate *)animate{
