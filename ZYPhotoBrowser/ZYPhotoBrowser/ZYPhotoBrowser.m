@@ -143,12 +143,6 @@ static NSString *const photoCellId = @"photoCellId";
     return self.animate;
 }
 
-
-- (NSArray *)maxImgs{
-    return self.imgUrls.count > self.images.count?self.imgUrls:self.images;
-}
-
-
 - (ZYPhotoBrowserAnimate *)animate{
     if (!_animate) {
         _animate = [[ZYPhotoBrowserAnimate alloc] init];

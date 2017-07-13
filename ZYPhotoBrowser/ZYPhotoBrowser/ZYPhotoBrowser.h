@@ -12,12 +12,13 @@
 
 - (NSInteger)countOfShowImages;
 
-//show images
+//local image UIImage
 - (NSArray *)photoBrowserImages;
 
 //local image PHAsset
 - (NSArray *)photoBrowserAssets;
 
+//NSString  url
 - (NSArray *)photoBrowserImageUrls;
 
 //根据index 拿到上一个视图中 imageView
