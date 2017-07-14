@@ -1,6 +1,8 @@
 # ZYPhotoBrowser
 图片浏览器
 
+![image](https://github.com/zhuyongqing/ZYPhotoBrowser/raw/master/ZYPhotoBrowser/browser.gif)
+
 ##使用
 
 把ZYPhotoBrowser文件夹加到项目中,加入第三方SDWebImage
