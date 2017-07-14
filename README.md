@@ -1,7 +1,7 @@
 # ZYPhotoBrowser
 图片浏览器
 
-![image](https://github.com/zhuyongqing/ZYPhotoBrowser/raw/master/ZYPhotoBrowser/browser.gif)
+![image](https://github.com/zhuyongqing/ZYPhotoBrowser/raw/master/browser.gif)
 
 ##使用
 
