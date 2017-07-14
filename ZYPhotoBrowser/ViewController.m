@@ -70,7 +70,10 @@ static NSString *const cellId = @"collectionCellId";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
-    [ZYPhotoBrowser photoBroswerShowWithIndex:indexPath.item startView:cell.imageV presentVc:self photoBrowserDelegate:self];
+    [ZYPhotoBrowser photoBroswerShowWithIndex:indexPath.item
+                                    startView:cell.imageV
+                                    presentVc:self
+                         photoBrowserDelegate:self];
 }
 
 #pragma mark - photobrowser delegate
